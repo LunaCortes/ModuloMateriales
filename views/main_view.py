@@ -1,9 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
-from views.maquinaria_view import mostrar_maquinaria
-from views.materia_prima_view import mostrar_materia_prima
-from views.producto_terminado_view import mostrar_producto_terminado
-from views.bill_of_material_view import mostrar_bill_of_material  # Importación necesaria
 
 class MainView(tk.Tk):
     def __init__(self):
@@ -69,19 +64,15 @@ class MainView(tk.Tk):
 
     def mostrar_bill_of_material(self):
         self.limpiar_vista()
-        mostrar_bill_of_material(self.container)
 
     def mostrar_maquinaria(self):
         self.limpiar_vista()
-        mostrar_maquinaria(self.container)
 
     def mostrar_materia_prima(self):
         self.limpiar_vista()
-        mostrar_materia_prima(self.container)
 
     def mostrar_producto_terminado(self):
         self.limpiar_vista()
-        mostrar_producto_terminado(self.container)
 
     def limpiar_vista(self):
         """Limpia el contenedor antes de cargar una nueva vista."""
